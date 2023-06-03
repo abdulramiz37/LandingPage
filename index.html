@@ -75,10 +75,7 @@ width:100%;  margin-top:170px;">Lorem ipsum dolor sit amet consectetur adipisici
 <audio id="myAudio" controls autoplay style="margin-top: 20px; opacity: 0.1;">
   <source src="audio6.mp3" type="audio/mp3" loop>
 </audio>
-<script defer>
-  const audio = document.getElementById("myAudio");
-  audio.play();
-</script>
+
 
 </p>
 
@@ -217,6 +214,11 @@ width:100%;  margin-top:170px;">Lorem ipsum dolor sit amet consectetur adipisici
    
 </footer>
     
-
+<script>
+      setTimeout(function() {
+        const audio = document.getElementById("myAudio");
+        audio.play();
+      }, 1000); // Delay the playback for 1 second (1000 milliseconds)
+    </script>
 </body>
 </html>
